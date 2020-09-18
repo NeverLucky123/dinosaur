@@ -1,8 +1,8 @@
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.x += -1
+    mySprite.x += -10
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.x += 1
+    mySprite.x += 10
 })
 let mySprite: Sprite = null
 scene.setBackgroundImage(img`
@@ -202,7 +202,8 @@ let mySprite2 = sprites.create(img`
     .............ffff...ffff..........
     ............f.f.f..f.f.f..........
     `, SpriteKind.Player)
-mySprite2.setPosition(10, 100)
+mySprite2.setPosition(20, 100)
+controller.startLightAnimation(light.rainbowAnimation, 5000)
 forever(function () {
 	
 })
