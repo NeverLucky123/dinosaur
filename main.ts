@@ -1,8 +1,8 @@
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.x += -10
+    victim.x += -10
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.x += 10
+    victim.x += 10
 })
 function CharSelect () {
     scene.setBackgroundImage(img`
@@ -162,7 +162,7 @@ let changeYPos = 0
 let changeXPos = 0
 let yPos = 0
 let xPos = 0
-let mySprite: Sprite = null
+let victim: Sprite = null
 scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
@@ -285,7 +285,7 @@ scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     `)
-mySprite = sprites.create(img`
+victim = sprites.create(img`
     ...................................
     ............55555555...............
     ...........555555555...............
@@ -323,7 +323,7 @@ mySprite = sprites.create(img`
     ...................................
     ...................................
     `, SpriteKind.Player)
-let mySprite2 = sprites.create(img`
+let geese = sprites.create(img`
     ..................................
     ..................................
     ..................................
@@ -360,8 +360,7 @@ let mySprite2 = sprites.create(img`
     .............ffff...ffff..........
     ............f.f.f..f.f.f..........
     `, SpriteKind.Player)
-mySprite2.setPosition(20, 100)
-controller.startLightAnimation(light.rainbowAnimation, 5000)
+geese.setPosition(20, 100)
 forever(function () {
 	
 })
