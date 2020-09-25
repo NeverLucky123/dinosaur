@@ -383,6 +383,7 @@ let gooseFlying = sprites.create(img`
     ...................................
     `, SpriteKind.Enemy)
 geese.setPosition(20, 100)
+gooseFlying.setPosition(120, 25)
 forever(function () {
 	
 })
