@@ -249,6 +249,12 @@ building_5 = sprites.create(img("""
             ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     """),
     SpriteKind.environment)
+building2.set_velocity(-50, 0)
+building2.set_position(100, 100)
+building_4.set_velocity(-50, 0)
+building_4.set_position(420, 76)
+building_5.set_velocity(-50, 0)
+building_5.set_position(900, 76)
 building1 = sprites.create(img("""
         . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
